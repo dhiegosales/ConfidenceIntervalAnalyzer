@@ -38,20 +38,37 @@
 
 - **Normality Tests:**
   - **Shapiro-Wilk Test:**
-    - **Formula:** \( W = \frac{S^2}{\sigma^2} \)
+    - **Formula:** $W = \frac{S^2}{\sigma^2} $
     - **p-value Interpretation:** A p-value > 0.05 suggests that the data is normally distributed.
+    - **Where:**
+      - $W$: Shapiro-Wilk test statistic.
+      - $S^2$: Sample variance.
+      - $\sigma^2$: Variance of a normal distribution with the same mean and variance as the sample.
+
   - **Kolmogorov-Smirnov Test:**
-    - **Formula:** \( D = \sup_{x} |F_n(x) - F(x)| \)
+    - **Formula:** $D = \sup_{x} |F_n(x) - F(x)|$
     - **p-value Interpretation:** A p-value > 0.05 suggests that the data follows a normal distribution.
+    - **Where:**
+      - $D$: Maximum distance between the empirical distribution function \( F_n(x) \) and the cumulative distribution function \( F(x) \) of the normal distribution.
+      - $\sup_{x}$: Supremum, or the greatest value, of the difference between the empirical and theoretical distribution functions.
+
 
 - **Confidence Interval Calculation:**
   - **For the Mean (Normal Distribution):**
-    - **Formula:** \( \text{CI} = \bar{x} \pm t_{\alpha/2, n-1} \times \frac{s}{\sqrt{n}} \)
+    - **Formula:** $\text{CI} = \bar{x} \pm t_{\alpha/2, n-1} \times \frac{s}{\sqrt{n}}$
+    - **Where:**
+      - $\bar{x}$: Sample mean.
+      - $t_{\alpha/2, n-1}$: Critical t-value for a given confidence level and \( n-1 \) degrees of freedom.
+      - $s$: Sample standard deviation.
+      - $n$: Sample size.
   - **For the Median (Non-Normal Distribution):**
     - **Formula:** Based on percentiles for the specified confidence level.
 
 - **Proportion of Data Points Outside the Confidence Interval:**
-  - **Formula:** \( \text{Proportion} = \frac{\text{Number of Points Outside}}{\text{Total Number of Points}} \times 100 \% \)
+  - **Formula:** $\text{Proportion} = \frac{\text{Number of Points Outside}}{\text{Total Number of Points}} \times 100 \%$
+  - **Where:**
+      - $\text{Number of Points Outside}$: The number of data points falling outside the confidence interval.
+      - $text{Total Number of Points}$: The total number of data points in the sample.
 
 ## Variable Definitions
 
